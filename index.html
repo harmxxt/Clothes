@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header class="bg-dark text-white">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <a href="#" class="logo text-white">ClothingStore</a>
+            <nav class="d-none d-lg-flex">
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Shop</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="d-flex align-items-center">
+                <div class="search-bar d-none d-lg-flex mr-3">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <button class="btn btn-danger"><i class="fas fa-search"></i></button>
+                </div>
+                <div id="themeToggle" class="text-white mr-3" style="cursor: pointer;">
+                    <i id="themeIcon" class="fas fa-moon"></i>
+                </div>
+                <a href="#" class="text-white mr-3"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="text-white"><i class="fas fa-user"></i></a>
+                <div class="hamburger d-lg-none ml-3">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="d-lg-none bg-dark text-white">
+        <ul class="nav flex-column text-center py-2 nav-links">
+            <li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">Shop</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
+            <li class="nav-item search-icon">
+                <i class="fas fa-search text-white"></i>
+            </li>
+        </ul>
+        <div class="search-bar d-none px-3 pb-3">
+            <input type="text" class="form-control" placeholder="Search...">
+            <button class="btn btn-danger mt-2"><i class="fas fa-search"></i> Search</button>
+        </div>
+    </nav>
+    <main>
+        
+        <section class="banner text-white text-center d-flex align-items-center justify-content-center" style="background: url('img/banner.jpg') no-repeat center center/cover; height: 60vh;">
+            <div class="container banner-overlay">
+                <h2 class="animate__animated animate__fadeInUp animate__fast">Welcome to Our Store</h2>
+                <p class="animate__animated animate__fadeInUp animate__fast animate__delay-0.3s">Find the best clothes for every occasion</p>
+                <a href="#" id="shopNowButton" class="btn btn-danger animate__animated animate__fadeInUp animate__fast animate__delay-0.6s">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="products container my-5">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated animate__zoomIn animate__fast">
+                        <img src="img/1.jpg" class="card-img-top product-img" alt="Product 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sweater</h5>
+                            <p class="card-text text-danger">$29.99</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated animate__zoomIn animate__fast animate__delay-0.3s">
+                        <img src="img/2.jpg" class="card-img-top product-img" alt="Product 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">T-Shirt (Pink)</h5>
+                            <p class="card-text text-danger">$39.99</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated animate__zoomIn animate__fast animate__delay-0.6s">
+                        <img src="img/3.jpg" class="card-img-top product-img" alt="Product 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Casual</h5>
+                            <p class="card-text text-danger">$49.99</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated animate__zoomIn animate__fast animate__delay-0.6s">
+                        <img src="img/4.jpg" class="card-img-top product-img" alt="Product 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">T-Shirt (White)</h5>
+                            <p class="card-text text-danger">$29.99</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated animate__zoomIn animate__fast animate__delay-0.6s">
+                        <img src="img/5.jpg" class="card-img-top product-img" alt="Product 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Coats</h5>
+                            <p class="card-text text-danger">$49.99</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated animate__zoomIn animate__fast animate__delay-0.6s">
+                        <img src="img/6.jpg" class="card-img-top product-img" alt="Product 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Shirts</h5>
+                            <p class="card-text text-danger">$39.99</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2025 Clothing Store. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
